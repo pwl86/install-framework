@@ -24,7 +24,7 @@ if($netFxKey -and $netFxKey.Release -ge 473081) {
 }
 
 # Download the latest NetFx48
-$setupFileSourceUri = "https://dotnet.microsoft.com/download/thank-you/net48"
+$setupFileSourceUri = "https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/1f81f3962f75eff5d83a60abd3a3ec7b/ndp48-web.exe"
 $setupFileLocalPath = Join-Path $env:TEMP -ChildPath "NDP48-web.exe"
 
 "$(Get-Date): Start to download NetFx 4.8 to $setupFileLocalPath." | Tee-Object -FilePath $logFile -Append
